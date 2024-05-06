@@ -563,6 +563,22 @@ video {
   grid-auto-rows: 400px;
 }
 
+.auto-rows-auto {
+  grid-auto-rows: auto;
+}
+
+.auto-rows-\[\] {
+  grid-auto-rows: ;
+}
+
+.auto-rows-\[30vh\] {
+  grid-auto-rows: 30vh;
+}
+
+.auto-rows-\[40vh\] {
+  grid-auto-rows: 40vh;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
