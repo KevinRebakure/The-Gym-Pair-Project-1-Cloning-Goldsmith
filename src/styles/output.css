@@ -551,52 +551,87 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .grid {
   display: grid;
 }
 
-.auto-rows-\[60vh\] {
-  grid-auto-rows: 60vh;
+.grid-flow-dense {
+  grid-auto-flow: dense;
+}
+
+.auto-rows-\[400px\] {
+  grid-auto-rows: 400px;
 }
 
 .auto-rows-\[40vh\] {
   grid-auto-rows: 40vh;
 }
 
-.auto-rows-\[10rems\] {
-  grid-auto-rows: 10rems;
+.auto-rows-\[4\] {
+  grid-auto-rows: 4;
 }
 
-.auto-rows-\[1\] {
-  grid-auto-rows: 1;
+.auto-rows-\[40\] {
+  grid-auto-rows: 40;
 }
 
-.auto-rows-auto {
-  grid-auto-rows: auto;
+.auto-rows-\[50\] {
+  grid-auto-rows: 50;
 }
 
-.auto-rows-\[\] {
-  grid-auto-rows: ;
+.auto-rows-\[50vh\] {
+  grid-auto-rows: 50vh;
 }
 
-.auto-rows-\[10r\] {
-  grid-auto-rows: 10r;
+.auto-rows-\[60\] {
+  grid-auto-rows: 60;
 }
 
-.auto-rows-\[10em\] {
-  grid-auto-rows: 10em;
-}
-
-.auto-rows-\[10rem\] {
-  grid-auto-rows: 10rem;
-}
-
-.auto-rows-\[100vh\] {
-  grid-auto-rows: 100vh;
-}
-
-.auto-rows-\[400px\] {
-  grid-auto-rows: 400px;
+.auto-rows-\[60vh\] {
+  grid-auto-rows: 60vh;
 }
 
 .grid-cols-1 {
@@ -605,6 +640,12 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
 .bg-blue-500 {
@@ -625,6 +666,11 @@ video {
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-blue-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
 .bg-orange-500 {
@@ -648,6 +694,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:col-start-4 {
     grid-column-start: 4;
   }
