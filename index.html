@@ -3,44 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/output.css" />
-    <title>Goldsmiths Clone</title>
+    <title>Capgemini clone</title>
   </head>
   <body>
-    <div class="container mx-auto space-y-10">
-      <!-- main 1 -->
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-4 auto-rows-[60vh]">
+    <div
+      class="container mx-auto grid auto-rows-[40vh] gap-3 sm:grid-cols-3 px-6 py-10"
+    >
+      <!-- the first box  -->
+      <div class="sm:col-span-3 sm:relative">
+        <div class="bg-pink-400 sm:h-full h-[70%] sm:w-[85%]"></div>
         <div
-          class="bg-blue-500 sm:col-start-4 sm:col-end-5 sm:row-start-1 sm:row-end-2"
-        >
-          1 -3d
-        </div>
-        <div
-          class="bg-green-400 sm:col-start-1 sm:col-end-3 sm:row-start-1 sm:row-end-3"
-        >
-          2 - 1d
-        </div>
-        <div
-          class="bg-orange-400 sm:col-start-3 sm:col-end-4 sm:row-start-1 sm:row-end-2"
-        >
-          3 - 2nd
-        </div>
-        <div
-          class="bg-red-500 sm:col-start-3 sm:col-end-5 sm:row-start-2 sm:row-end-3"
-        >
-          4
-        </div>
+          class="bg-yellow-100 h-[30%] relative bottom-4 mx-auto w-[80%] sm:w-[30%] sm:h-[70%] sm:absolute sm:left-[65%] sm:top-[50%] sm:translate-y-[-50%]"
+        ></div>
       </div>
-  
-      <!-- main 2 -->
-      <div class="grid grid-cols-1 gap-4 auto-rows-[60vh] sm:grid-cols-4 grid-flow-dense">
-        <div class="bg-blue-800 sm:col-span-2">1</div>
-        <div class="bg-red-500">2</div>
-        <div class="bg-orange-500">3</div>
-        <div class="bg-green-500">4</div>
-        <div class="bg-blue-400">5</div>
-        <div class="bg-gray-400 sm:col-span-2">6</div>
+      <!-- the second box  -->
+      <div class="sm:order-1 sm:col-span-2 sm:flex">
+        <div
+          class="bg-blue-500 h-[70%] sm:h-full sm:w-[75%] sm:relative sm:order-1"
+        ></div>
+        <div
+          class="bg-yellow-100 h-[30%] relative bottom-4 mx-auto w-[80%] sm:w-[40%] sm:top-[50%] sm:translate-y-[-50%] sm:left-12 sm:z-10 sm:h-[70%]"
+        ></div>
       </div>
+      <!-- the third box  -->
+      <div class="bg-green-500 sm:w-[90%] sm:ml-16"></div>
     </div>
   </body>
 </html>
